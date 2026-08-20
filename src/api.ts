@@ -1,6 +1,6 @@
 import type { ApiObject, MovieDetails } from "./type.js";
 export async function searchMovie(name: string) {
-  const url = `http://www.omdbapi.com/?apikey=91386b87&s=${name}`;
+  const url = `https://www.omdbapi.com/?apikey=91386b87&s=${name}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -15,7 +15,7 @@ export async function searchMovie(name: string) {
 }
 
 export async function getMovieById(imdbID: string) {
-  const url = `http://www.omdbapi.com/?apikey=91386b87&i=${imdbID}`;
+  const url = `https://www.omdbapi.com/?apikey=91386b87&i=${imdbID}`;
   try {
     const response = await fetch(url);
     if (!response.ok) {
