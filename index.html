@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="explorer">
+      <h1 class="title">Movie Explorer</h1>
+      <form class="search-bar" id="search-form">
+        <input
+          type="text"
+          class="search-input"
+          id="search-input"
+          placeholder="Search movies..."
+          autocomplete="off"
+        />
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+      <div class="view">
+        <div class="movie-card">
+          <div class="poster"></div>
+          <div class="movie-info">
+            <h2 class="movie-title">INception</h2>
+            <p class="movie-year">2050</p>
+            <p class="movie-rating">⭐ 8.8</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="dist/main.js"></script>
+  </body>
+</html>
